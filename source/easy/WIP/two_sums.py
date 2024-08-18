@@ -2,7 +2,7 @@ class Solution:
     def twoSum(self, nums, target):
         pair_idx = {}
         for i, num in enumerate(nums):
-            # print(pair_idx)
+            print(list(enumerate(nums)), i, num,pair_idx)
             if target - num in pair_idx:
                 return [i, pair_idx[target - num]]
             pair_idx[num] = i
@@ -28,9 +28,9 @@ def palindrome(number):
 
 if __name__ == "__main__":
     a = Solution
-    print("======================================")
-    k = a.twoSum(Solution, [2,7,11,15], 9)
-    print(k)
+    # print("======================================")
+    # k = a.twoSum(Solution, [2,7,11,15], 9)
+    # print(k)
     print("======================================")
     k = a.twoSum(Solution,[3,2,4], 6)
     print(k)
@@ -38,4 +38,4 @@ if __name__ == "__main__":
     k = a.twoSum(Solution, [3,3], 6)
     print(k)
 
-    palindrome(12321)
+    # palindrome(12321)
